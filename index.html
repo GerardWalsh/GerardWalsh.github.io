@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Claire Maree Collier</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+* { box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+/*
+ Primary Rules
+*/
+h1 {
+    font-weight: 300;
+    margin: 5px 0 0;
+    font-size: 40px;
+    padding: 0 10px 10px;
+    border-radius:2px;
+    font-family: 'Slabo 27px', serif;
+}
+/*
+h2 {
+    width: 150px;
+    font-size: 18px;
+    padding-left: 20px;
+    font-family: 'Slabo 27px', serif;
+}*/
+h2, h3 { font-size: 18px;
+     font-weight: bold;
+     margin-bottom: 0;
+     line-height: 28px;
+     font-family: 'Slabo 27px', serif;
+}
+/* h2, h3 { margin-top: 5px } */
+a { color: #ba0018;
+    display: inline-block;
+    text-decoration: none;
+    padding:2px 4px;
+    border-radius:2px;
+    margin-right:-2px;
+}
+a:hover {
+  background-color:#ba0018;
+  color:#fff;
+}
+.key:first-child { margin-left: 0 }
+.key { margin: 0 10px;
+       position: relative;
+}
+.key::before { content: '◆';
+               position: absolute;
+               left: -15px;
+               color: #555;
+               font-size: 7pt;
+}
+.key:first-child::before { content: '' }
+.section { border-bottom: 1px solid #ddd;
+           padding: 10px 0 15px;
+}
+.section:last-child { border: none }
+.section-text {
+    width: 80%;
+    /*
+    font-size: 18px;
+    line-height: 24px;
+    */
+    margin: 0 0 10px;
+    padding: 0 10px;
+}
+.subsection { margin: 10px 0 5px }
+.desc { font-size: 16px; color:#444;}
+.contact-info { font-size: 16px;
+                text-align: right;
+}
+.emph { font-style: italic }
+.light { color: #aaa;letter-spacing:1px;
+         font-size: 14px;
+         line-height:28px;
+         text-transform:uppercase;
+}
+ul{
+  padding-left:15px;
+}
+ul.skills{
+  float:left;
+  width:30%;
+  padding-left:0px;
+  margin: 0 20px 0 0;
+}
+ul.skills li{
+  list-style: none;
+  font-size:16px;
+  margin-bottom:10px;
+}
+ul.skills li:last-child{
+  margin:0;
+}
+/*
+ Float Rules
+*/
+.row:before, .row:after { content: "";
+                          display: table;
+}
+.row:after { clear: both }
+.col { float: left }
+.col-right { float: right }
+/*
+ Page Rules
+*/
+.page { width: 1000px;
+        min-height: 29.7cm;
+        margin: 1cm auto;
+        background: white;
+        padding: 20px 50px;
+}
+.subpage { padding: 1cm;
+           border: 1px red solid;
+           height: 297mm;
+}
+@page { size: A4;
+        margin: 0;
+}
+@media print {
+    .page { margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+    }
+    .page-break{
+      page-break-before: always;
+      padding-top:30px;
+    }
+    body { font-size: 12pt;}
+    h1{
+      font-size: 23pt;
+    }
+    h2{
+      font-size:10pt;
+      width: 3cm;
+      padding-left: 10px;
+    }
+    h3 { font-size: 10pt; line-height:11pt}
+    .section-text { font-size: 9pt; line-height: 14pt; }
+    .light { font-size: 7.5pt; line-height:12pt; color:#ddd; }
+    
+    .page { width: 21cm }
+    ul {margin:5px 0 0}
+    .section { padding: 5px 0 8px }
+    .section-text { width: 15cm; margin: 5px 0 5px;}
+    .subsection { margin: 5px 0 0 }
+    .desc { font-size: 9pt }
+    
+    .contact-info { font-size: 9pt}
+    
+    ul.skills{margin: 0 10px 0 0;}
+    ul.skills li{ font-size: 9pt; margin-bottom:0}
+}
+        </style>
+    <body>
+        <div class="page">
+            <div class="section row">
+                <h1 class="col">Claire Maree Collier</h1>
+                <div class="contact-info col-right">
+                    <div>074  139 7009 <i class="fa fa-phone-square"></i></div>
+                    <div><a href="mailto:claire.m.collier@gmail.com">claire.m.collier@gmail.com</a> <i class="fa fa-envelope-square"></i></div>
+                    <div><a href="za.linkedin.com/in/clairemcollier">za.linkedin.com/in/clairemcollier</a> <i class="fa fa-linkedin-square"></i></div>
+                </div>
+            </div>
+            <!--
+            <div class="section row">
+                <h2 class="col">Interests</h2>
+                <div class="section-text col-right"><span class="key">Intelligent systems</span> <span class="key">Machine learning</span> <span class="key">Data visualization</span> <span class="key">Computer vision &amp; graphics</span> <span class="key">Information networks</span> <span class="key">User experience / interaction design</span> </div>
+            </div>
+            -->
+            <div class="section row">
+                <h2 class="col">Skills</h2>
+                <div class="section-text col-right row">
+                    <ul class="skills" style="width:30%">
+                        <li>Teaching</li>
+                        <li>Curriculum Development</li>
+                        <li>Higher Education</li>
+                        <li>Team Organisation</li>
+                    </ul>
+                    <ul class="skills" style="width:30%">
+                        <li>Public Speaking</li>
+                        <li>Lesson Planning</li>
+                        <li>Teacher Training</li>
+                        <li>Budgets</li>
+                        
+                    </ul>
+                    <ul class="skills">
+                        <li>Microsoft Office</li>
+                        <li>Reporting</li>
+                        <li>Time Management</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+                        <div class="section row">
+                <h2 class="col">Experience</h2>                
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Northlands Girls’ High School</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Head of the History Department</div>
+                        <div class="col-right light">2011-2016</div>
+                    </div>
+                    <div>
+                    Mentoring new History educators, management of teaching staff and resources for the various grades, attending educator workshops, arranging History excursions, managing the History Department budget and teaching materials, administrative responsibilities such as filing, emailing, recording and timeously distributing minutes from subject meetings, collating and recording the results for each grade at the end of every term.
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                    <div class="row subsection">
+                        <div class="emph col">Sports House Mother</div>
+                        <div class="col-right light">2010-2015</div>
+                    </div>
+                    <div>
+                    Coordinating learners for various sporting activities, encouraging and motivating learners to take part in activities, hosting meetings, building spirit among the learners, fundraising for sporting events.
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                    <div class="row subsection">
+                        <div class="emph col">Staff Liaison Officer</div>
+                        <div class="col-right light">2010-2011</div>
+                    </div>
+                    <div>
+                    Liaising between teaching staff and principal, arranging meetings with individuals and the principal, facilitating report back sessions with the staff on a regular basis.
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                    <div class="row subsection">
+                        <div class="emph col">Educator (History and English)</div>
+                        <div class="col-right light">2004-2016</div>
+                    </div>
+                    <div>
+                    Grade coordinator for History Grades 9, 10, 11 and 12, creating learning materials both written and audio-visual, attending various educator workshops to improve content knowledge and teaching skills, giving seminars on teaching about Heritage in KwaZulu-Natal, school fundraising, attending Matric History marking in 2009 to 2013.
+                    </div>
+                    <!--
+                    <ul class="desc">
+                    </ul>
+                    -->
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">Education</h2>
+                <div class="section-text col-right">
+                    <h3>Bachelor of Education in Further Education and Training</h3>
+                    <div>University of KwaZulu-Natal</div>
+                    <div class="row">
+                        <div class="col light">Durban, South Africa</div>
+                        <div class="col-right light">2004</div>
+                    </div>
+                </div>
+                <div class="section-text col-right">
+                    <h3>Diploma in Computer Engineering</h3>
+                    <div>Varsity College</div>
+                    <div class="row">
+                        <div class="col light">Durban, South Africa</div>
+                        <div class="col-right light">2004</div>
+                    </div>
+                </div>
+                <div class="section-text col-right">
+                    <h3>Matric</h3>
+                    <div>Durban Girls’ High School</div>
+                    <div class="row">
+                        <div class="col light">Durban, South Africa</div>
+                        <div class="col-right light">1999</div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="section row">
+                <h2 class="col">Projects</h2>
+                <div class="section-text col-right">
+                </div>
+            </div>
+            -->
+            <div class="section row">
+                <h2 class="col">Achievements</h2>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Matric Pass Rate</h3>
+                        </div>
+                    </div>
+                    <div class="desc">
+                    My Matric History classes have consistently had a 100% pass rate throughout my years of teaching them.  I prepare my learners extremely well for their Final History examinations.   I have developed an exceptionally good rapport with my learners which has resulted in an effective and respectful working environment.
+                    </div>
+                </div>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Co-Authored History Textbook</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">New Generation History Grade 10</div>
+                        <div class="col-right light">2012</div>
+                    </div>
+                </div>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Co-Authored History Study Guide</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">New Generation Study Guide Grade 12</div>
+                        <div class="col-right light">2015</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
